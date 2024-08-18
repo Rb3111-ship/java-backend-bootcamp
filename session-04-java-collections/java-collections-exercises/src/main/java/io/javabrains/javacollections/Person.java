@@ -22,7 +22,9 @@ public class Person {
             return false;
         }
         Person person = (Person) o; // so you have to typecast it into a Person Type
-        return this.age == person.age && Objects.equals(this.firstName, person.firstName) && Objects.equals(this.lastName, person.lastName);
+        return this.age == person.age
+                && Objects.equals(this.firstName, person.firstName)
+                && Objects.equals(this.lastName, person.lastName);
     }
 
     // next is HashCode generation
